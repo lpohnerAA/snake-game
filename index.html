@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradient background */
+            font-family: Arial, sans-serif; /* Set a font for the entire page */
+        }
+        canvas {
+            background: #000;
+            border: 5px solid #fff; /* Add border around the canvas */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+        }
+        #score {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+        }
+        #title {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+        }
+        #instructions {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Title of the game -->
+    <div id="title">Snake Game</div>
+    <!-- Instructions for the game -->
+    <div id="instructions">
+        Use the arrow keys to move the snake.<br>
+        Eat the red food to grow.<br>
+        Avoid the gray obstacles and don't run into yourself!
+    </div>
+    <!-- Score display -->
+    <div id="score">Score: 0</div>
+    <!-- Canvas element for the game -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <!-- Include the JavaScript file -->
+    <script src="snake.js"></script>
+</body>
+</html>
