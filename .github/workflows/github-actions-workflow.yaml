@@ -49,7 +49,7 @@ jobs:
       - run: echo "This job's status is ${{ job.status }}."
 
   Second-Job:
-    name: The second job running on another runner
+    name: Windows Job
     runs-on: windows-latest
     needs: Example-Actions-Job
     steps:
